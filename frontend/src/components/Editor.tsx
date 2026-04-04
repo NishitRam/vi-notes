@@ -26,7 +26,7 @@ const Editor: React.FC = () => {
   const [isTyping, setIsTyping] = useState(false);
   
   const activeKeys = useRef<Map<string, number>>(new Map());
-  const typingTimer = useRef<NodeJS.Timeout | null>(null);
+  const typingTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const eventLogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
