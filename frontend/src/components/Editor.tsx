@@ -183,12 +183,12 @@ const Editor: React.FC = () => {
             <h2>Immersive Writer</h2>
             <p>Signature capturing in progress</p>
           </div>
-          <div className="status-pills">
+          {/* <div className="status-pills">
             <div className={`pill ${isTyping ? 'active' : ''}`}>
               <span className="pulse-dot"></span>
               {isTyping ? 'Verifying Rhythm' : 'Standby'}
             </div>
-          </div>
+          </div> */}
         </header>
 
         <div className="writing-surface">
@@ -215,7 +215,7 @@ const Editor: React.FC = () => {
           </div>
         </div>
 
-        <div className="action-bar">
+        {/* <div className="action-bar">
           <button 
             className="primary-btn" 
             onClick={handleSave}
@@ -224,11 +224,11 @@ const Editor: React.FC = () => {
             {isSaving ? 'Finalizing...' : (
               <>
                 <Save size={20} />
-                Submit Signature
+                Submit 
               </>
             )}
           </button>
-        </div>
+        </div> */}
       </div>
 
       <aside className="analysis-sidebar">
